@@ -1,0 +1,34 @@
+# Ignorar tudo (por padrão)
+*
+
+# Exceções: permitir apenas o necessário
+!Dockerfile
+!docker-compose.yml
+!*.conf
+!**/*.sh
+!**/requirements.txt
+!**/package.json
+
+# Pastas e arquivos específicos para ignorar
+.git/
+.gitignore
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+__pycache__/
+*.log
+*.tmp
+*.swp
+
+# Ignorar arquivos de ambiente (podem ser configurados via --build-arg ou docker-compose)
+.env
+*.env
+secrets/
+
+# Ignorar arquivos de build/desenvolvimento
+dist/
+build/
+*.exe
+*.o
+*.class
